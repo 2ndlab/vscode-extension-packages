@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		// typescript options here
+		"allowJs": true,
+		"lib": ["DOM"],
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"resolveJsonModule": true
+	},
+	// This is an alias to @tsconfig/node20: https://github.com/tsconfig/bases
+	// https://github.com/TypeStrong/ts-node/pull/2091
+	"extends": "./node_modules/@tsconfig/node20/tsconfig.json",
+	// Most ts-node options can be specified here using their programmatic names.
+	"ts-node": {
+		"compilerOptions": {
+			// compilerOptions specified here will override those declared below,
+			// but *only* in ts-node.  Useful if you want ts-node and tsc to use
+			// different options with a single tsconfig.json.
+			"module": "ESNext"
+		},
+		"esm": true,
+		"files": true,
+		"swc": true,
+		// It is faster to skip typechecking.
+		// Remove if you want ts-node to do typechecking.
+		"transpileOnly": true
+	}
+}
