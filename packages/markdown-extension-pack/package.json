@@ -1,0 +1,29 @@
+{
+  "name": "markdown-extension-pack",
+  "displayName": "2ndLAB - Markdown Extension Pack",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "2ndLAB",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2ndlab/vscode-extension-packages.git"
+  },
+  "icon": "2ndlab-markdown.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "yzhang.markdown-all-in-one",
+    "shd101wyy.markdown-preview-enhanced",
+    "mdickin.markdown-shortcuts",
+    "davidanson.vscode-markdownlint"
+  ],
+  "author": {
+    "name": "peaceshi"
+  },
+  "homepage": "https://vscode.2ndlab.eu.org"
+}

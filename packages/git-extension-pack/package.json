@@ -1,0 +1,29 @@
+{
+  "name": "git-extension-pack",
+  "displayName": "2ndLAB - Git Extension Pack",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "icon": "2ndlab-git.png",
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "joshbolduc.commitlint",
+    "vivaxy.vscode-conventional-commits",
+    "donjayamanne.githistory",
+    "codezombiech.gitignore"
+  ],
+  "author": {
+    "name": "peaceshi"
+  },
+  "homepage": "https://vscode.2ndlab.eu.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2ndlab/vscode-extension-packages.git"
+  },
+  "publisher": "2ndLAB",
+  "license": "MIT"
+}

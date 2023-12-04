@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-extension-pack",
+  "displayName": "2ndLAB - NodeJS Extension Pack",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "2ndLAB",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2ndlab/vscode-extension-packages.git"
+  },
+  "icon": "2ndlab-nodejs.png",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ],
+  "extensionDependencies": [
+    "2ndlab.javascript-extension-pack"
+  ],
+  "author": {
+    "name": "peaceshi"
+  },
+  "homepage": "https://vscode.2ndlab.eu.org",
+  "license": "MIT"
+}

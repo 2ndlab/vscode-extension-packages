@@ -1,0 +1,27 @@
+{
+  "name": "intellicode-with-api-usage-examples-pack",
+  "displayName": "2ndLAB - Intellicode with Api Usage Examples Pack",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "2ndLAB",
+  "icon": "2ndlab-ai.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2ndlab/vscode-extension-packages.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "visualstudioexptteam.vscodeintellicode",
+    "visualstudioexptteam.intellicode-api-usage-examples"
+  ],
+  "author": {
+    "name": "peaceshi"
+  },
+  "homepage": "https://vscode.2ndlab.eu.org"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "github-extension-pack",
+  "displayName": "2ndLAB - GitHub Extension Pack",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "2ndLAB",
+  "icon": "2ndlab-github.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2ndlab/vscode-extension-packages.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "github.vscode-github-actions",
+    "github.codespaces",
+    "github.vscode-pull-request-github",
+    "github.remotehub"
+  ],
+  "author": {
+    "name": "peaceshi"
+  },
+  "homepage": "https://vscode.2ndlab.eu.org"
+}

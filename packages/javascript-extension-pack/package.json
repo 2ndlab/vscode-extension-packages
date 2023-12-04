@@ -1,0 +1,30 @@
+{
+  "name": "javascript-extension-pack",
+  "displayName": "2ndLAB - JavaScript Extension Pack",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "2ndLAB",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2ndlab/vscode-extension-packages.git"
+  },
+  "icon": "2ndlab-javascript.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "kisstkondoros.vscode-codemetrics",
+    "ms-vscode.vscode-typescript-next"
+  ],
+  "extensionDependencies": [
+    "2ndlab.intellicode-with-api-usage-examples-pack"
+  ],
+  "author": {
+    "name": "peaceshi"
+  },
+  "homepage": "https://vscode.2ndlab.eu.org"
+}
