@@ -1,0 +1,27 @@
+{
+  "name": "vscode-extension-packages",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "lint": "prettier . --write",
+    "package:update": "pnpm update --filter tools",
+    "package:create": "cd packages && yo code",
+    "package:build": "pnpm --filter tools tools:build",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "node": "^v20.9.0"
+  },
+  "keywords": [],
+  "author": "peaceshi",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "3.1.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
