@@ -1,0 +1,10 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Button from "@components/solid/Button";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="bg-primary mx-auto flex h-screen items-center justify-center">
+      <Button client:only="solid-js"/>
+  </main>
+</Layout>
