@@ -5,7 +5,8 @@ root = true
 
 # Tab indentation
 [*]
-indent_style = tab
+indent_style = false
+max_line_length = 120
 
 # Unix-style newlines with a newline ending every file
 [*]
