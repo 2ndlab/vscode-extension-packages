@@ -1,6 +1,6 @@
 {
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"conventionalCommits.scopes": ["website"]
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "conventionalCommits.scopes": ["website"]
 }

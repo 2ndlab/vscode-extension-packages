@@ -3,13 +3,13 @@
 // <https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation>
 
 interface ImportMetaEnv {
-	[key: string]: any;
+  [key: string]: any;
 }
 
 interface ImportMeta {
-	/**
-	 * @since Node 20
-	 * @description Get env settings from workspace root `.env` file and process.env.
-	 */
-	env: ImportMetaEnv;
+  /**
+   * @since Node 20
+   * @description Get env settings from workspace root `.env` file and process.env.
+   */
+  env: ImportMetaEnv;
 }
