@@ -1,15 +1,17 @@
 {
-	"extends": "astro/tsconfigs/strict",
-	"compilerOptions": {
-		"jsx": "preserve",
-		"jsxImportSource": "solid-js",
-		"baseUrl": ".",
-		"paths": {
-			"@components/*": ["src/components/*"],
-			"@assets/*": ["src/assets/*"],
-			"@layouts/*": ["src/layouts/*"],
-			"@pages/*": ["src/pages/*"]
-		},
-		"types": ["vite-plugin-pwa/info", "vite-plugin-pwa/client"]
-	}
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"],
+      "@types": ["src/types/index"],
+      "@utils/*": ["src/utils/*"]
+    },
+    "types": ["vite-plugin-pwa/info", "vite-plugin-pwa/client"]
+  }
 }
