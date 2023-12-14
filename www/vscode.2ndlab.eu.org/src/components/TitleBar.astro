@@ -1,0 +1,28 @@
+<div id="pwa-title-bar" class="invisible flex justify-start items-center bg-primary">
+  <slot />
+</div>
+<style is:global>
+  #pwa-title-bar {
+    /* Make sure the `div` stays there, even when scrolling. */
+    position: fixed;
+    /* Use the environment variable for the left anchoring with a fallback. */
+    left: env(titlebar-area-x, 0);
+    /* Use the environment variable for the top anchoring with a fallback. */
+    top: env(titlebar-area-y, 0);
+    /* Use the environment variable for setting the width with a fallback. */
+    width: env(titlebar-area-width, 100%);
+    /* Use the environment variable for setting the height with a fallback. */
+    height: env(titlebar-area-height, 33px);
+  }
+  @media (display-mode: window-controls-overlay) {
+    #pwa-title-bar {
+      visibility: visible;
+      -webkit-app-region: drag;
+      app-region: drag;
+    }
+    #pwa-title-bar button {
+      -webkit-app-region: no-drag;
+      app-region: no-drag;
+    }
+  }
+</style>

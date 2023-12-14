@@ -1,1 +1,1 @@
-export default () => <button class="btn glass">This is a Paragraph</button>;
+export default () => <button class="btn btn-secondary">This is a button</button>;
