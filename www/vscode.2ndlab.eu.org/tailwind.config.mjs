@@ -9,7 +9,15 @@ export default {
   plugins: [daisyui],
   daisyui: {
     themes: [
-      "light",
+      {
+        甘雨: {
+          primary: "#8AB1DA",
+          secondary: "#BFCEE4",
+          accent: "#7B5E68",
+          neutral: "#B1AABA",
+          "base-100": "#F4F7FD",
+        },
+      },
       "dark",
       {
         凝光: {
@@ -26,13 +34,6 @@ export default {
           neutral: "#F4DAC7",
           "base-100": "#F0ECE8",
         },
-        甘雨: {
-          primary: "#8AB1DA",
-          secondary: "#BFCEE4",
-          accent: "#7B5E68",
-          neutral: "#B1AABA",
-          "base-100": "#F4F7FD",
-        },
         刻晴: {
           primary: "#5B4877",
           secondary: "#B09DC8",
@@ -45,21 +46,21 @@ export default {
           secondary: "#74ACD0",
           accent: "#91C7E7",
           neutral: "#BAD7E7",
-          "base-100": "#FEFEFE",
+          "base-100": "#EDF5FB",
         },
         纳西妲: {
           primary: "#AFC486",
           secondary: "#C5CAAB",
           accent: "#B5ABA3",
           neutral: "#D5D0C8",
-          "base-100": "#F6F6F6",
+          "base-100": "#EDF1E9",
         },
         珐露珊: {
           primary: "#416572",
           secondary: "#9BC5C2",
           accent: "#B4CFD1",
           neutral: "#C3CDD1",
-          "base-100": "#F6F6F6",
+          "base-100": "#EDF0EF",
         },
       },
     ],
