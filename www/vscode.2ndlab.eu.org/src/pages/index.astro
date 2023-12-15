@@ -5,6 +5,79 @@ import Layout from "@layouts/Layout.astro";
 
 <Layout title="Welcome to Astro.">
   <main class="bg-base-100 mx-auto flex h-screen items-center justify-center">
-    <ThemePreview client:only="solid-js" />
+    <ThemePreview animation={true} client:only="solid-js" />
   </main>
 </Layout>
+<style is:global>
+  .trans-y-0 {
+    animation: trans-y-0 1s infinite;
+    animation-direction: normal;
+  }
+  @keyframes trans-y-0 {
+    100% {
+      animation-timing-function: ease-out;
+      transform: translateY(0);
+    }
+    75% {
+      animation-timing-function: ease-in;
+      transform: translateY(-5px);
+    }
+    50% {
+      animation-timing-function: ease-out;
+      transform: translateY(0);
+    }
+    25% {
+      animation-timing-function: ease-in;
+      transform: translateY(5px);
+    }
+  }
+  .trans-y-1 {
+    animation: trans-y-1 1s infinite;
+    animation-direction: normal;
+    transform: translateY(5px);
+  }
+  @keyframes trans-y-1 {
+    100% {
+      animation-timing-function: ease-out;
+      transform: translateY(5px);
+    }
+    75% {
+      animation-timing-function: ease-in;
+      transform: translateY(0px);
+    }
+    50% {
+      animation-timing-function: ease-out;
+      transform: translateY(-5px);
+    }
+    25% {
+      animation-timing-function: ease-in;
+      transform: translateY(0px);
+    }
+  }
+  .trans-y-0-reverse {
+    animation-direction: reverse;
+  }
+  .trans-y-1-reverse {
+    animation: trans-y-1-reverse 1s infinite;
+    animation-direction: normal;
+    transform: translateY(-5px);
+  }
+  @keyframes trans-y-1-reverse {
+    100% {
+      animation-timing-function: ease-out;
+      transform: translateY(-5px);
+    }
+    75% {
+      animation-timing-function: ease-in;
+      transform: translateY(0px);
+    }
+    50% {
+      animation-timing-function: ease-out;
+      transform: translateY(5px);
+    }
+    25% {
+      animation-timing-function: ease-in;
+      transform: translateY(0px);
+    }
+  }
+</style>
