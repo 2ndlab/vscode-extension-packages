@@ -1,5 +1,6 @@
 import type { JSX, ParentComponent } from "solid-js";
-import { For, Match, Switch } from "solid-js";
+import { For, Match, Switch, createEffect } from "solid-js";
+import { animate, stagger } from "motion";
 
 const ThemePreview: ParentComponent<{ children?: JSX.Element; animation?: boolean }> = (props) => {
   const bgProps = [
@@ -12,24 +13,29 @@ const ThemePreview: ParentComponent<{ children?: JSX.Element; animation?: boolea
     "bg-warning",
     "bg-error",
   ];
+  const seed = (Math.sqrt(5) - 1) / 2;
+  createEffect(() => {
+    animate(
+      ".loop-alternate-infinity",
+      { y: 10 },
+      {
+        delay: stagger(seed),
+        duration: seed * 2,
+        direction: "alternate-reverse",
+        easing: "ease-in-out",
+        repeat: Infinity,
+      },
+    );
+  });
   return (
     <>
       <span class="flex justify-center items-center bg-base-100 rounded-btn shrink-0 flex-wrap gap-1 p-1 m-1">
         {props.children}
         <For each={bgProps}>
-          {(bgProp, index) => (
+          {(bgProp) => (
             <Switch fallback={<span class={`${bgProp} w-2 h-4 rounded-full`} />}>
-              <Match when={props.animation && (index() === 0 || index() === 4)}>
-                <span class={`${bgProp} trans-y-0 w-2 h-4 rounded-full`} />
-              </Match>
-              <Match when={props.animation && (index() === 2 || index() === 6)}>
-                <span class={`${bgProp} trans-y-0 trans-y-0-reverse w-2 h-4 rounded-full`} />
-              </Match>
-              <Match when={props.animation && (index() === 1 || index() === 5)}>
-                <span class={`${bgProp} trans-y-1 w-2 h-4 rounded-full`} />
-              </Match>
-              <Match when={props.animation && (index() === 3 || index() === 7)}>
-                <span class={`${bgProp} trans-y-1-reverse w-2 h-4 rounded-full`} />
+              <Match when={props.animation}>
+                <span class={`${bgProp} loop-alternate-infinity w-2 h-4 rounded-full`} />
               </Match>
             </Switch>
           )}
